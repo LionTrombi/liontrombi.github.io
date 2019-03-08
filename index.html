@@ -1,4 +1,118 @@
-<!doctype HTML>
-<html>
-	Lion
-</html>
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<style>
+body {
+	background-color: #E0E0E0;
+}
+
+#header{
+	background: url(assets/bg_test.jpg) no-repeat center center; !important
+	width: 50%;
+	top: 20;
+	background-size: contain;
+	height: 200px;
+
+}
+.jumbotron {
+	height: 350px;
+		background-color: black !important;
+			border-radius: 0;
+
+}
+
+.text {
+	font-size: 350%;
+	font-family: "Bebas Neue";
+}
+
+.grey-shadow-box {
+	box-shadow: 4px 5px 1px -2px #878787;
+}
+
+.guess-who {
+	width: 60%;
+	height: 100%;
+
+}
+
+.btn {
+	box-shadow: 5px 6px 0px -2px #FF00FF;
+	background-color: yellow;
+	border-color: yellow;
+	color: black;
+	font-family: 'Bebas Neue';
+	font-size: 200%;
+	border-radius: 0;
+}
+
+.btn:hover {
+	background: #ff6600;
+	border-color: #ff6600
+}
+.btn:active {
+	background-color: #ff6600; !important
+	color: #ff6600; !important
+	border-color: #ff6600
+}
+
+#score {
+	font-size: 200%;
+	position: absolute;
+	top: 40%;
+	left: 3%;
+	color: black; !important
+}
+
+.infos {
+	font-size: 150% !important;
+}
+
+
+	</style>
+
+		<title>Trombinoscope Lion!</title>
+	</head>
+	<body>
+		<div style="background-color: black !important" id="header" class="jumbotron grey-shadow-box">
+			<div class="container text-center">
+			</div>
+		</div>
+		<div class="container">
+			<h1 class="text text-dark text-center">Trombinoscope Lion Spring 2019</h1>
+			<div style="background-color: white;" class="row grey-shadow-box">
+				<div class="col-sm-6 text-center">
+					<img class="guess-who img-thumbnail" src="" id="imgGuess"/>
+				</div>
+				<div class="col-xs-3" id="buttons">
+					<br><br><br>
+					<button onclick="choice(1)" class="btn btn-primary" id="btn1"></button>
+					<br><br>
+					<button onclick="choice(2)" class="btn btn-primary" id="btn2"></button>
+					<br><br>
+					<button onclick="choice(3)" class="btn btn-primary" id="btn3"></button>
+					<br><br>
+					<button onclick="choice(4)" class="btn btn-primary" id="btn4"></button>
+					<br><br>
+					<h2 class="infos text text-center"id='infos'></h2>
+				</div>
+				<div class"col-xs-3">
+					<h1 class="text text-dark" id="score">Score: 0</h1>
+				</div>
+			</div>
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="main.js"></script>
+	</body>
